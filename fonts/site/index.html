@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Index</title>
+    <link rel="stylesheet" href="../fonts/css/all.css" />
+    <style>
+      #header {
+        width: 100%;
+        height: 60px;
+        background-color: darkcyan;
+        color: white;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 3em;
+      }
+      #footer {
+        width: 100%;
+        height: 60px;
+        background-color: darkcyan;
+        color: white;
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2em;
+      }
+      #section {
+        height: 100px;
+        width: 200px;
+      }
+      #section:target {
+      }
+      span {
+        margin-left: 50px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <span>
+        <a href="home.html" target="frameBody">
+          <span class="fa fa-home"></span>HOME
+        </a>
+      </span>
+      <span>
+        <a href="about.html" target="frameBody">
+          <span class="fa fa-user"></span>ABOUT
+        </a>
+      </span>
+      <span>
+        <a href="about.html" target="frameBody">
+          <span class="fa fa-address-book"></span>CONTACT
+        </a>
+      </span>
+    </div>
+    <div id="section">
+      <iframe
+        name="frameBody"
+        src="home.html"
+        width="100%"
+        height="350px"
+        style="border-style:none;"
+      ></iframe>
+    </div>
+    <div id="footer">
+      &copy; copyright 2020
+    </div>
+  </body>
+</html>
